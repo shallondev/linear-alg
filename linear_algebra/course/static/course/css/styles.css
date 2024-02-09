@@ -1,0 +1,54 @@
+aside {
+    background-color: hsl(240, 50%, 25%);
+    width: 350px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+aside a:hover {
+    color: hsl(16, 100%, 60%);
+}
+
+.sidebar-title {
+    text-align: center; 
+    padding-top: 30px; 
+    margin: 10px;
+    color: white;
+}
+
+.sidebar-title span {
+    color: hsl(16, 100%, 60%);
+}
+
+.sidebar-contact {
+    text-align: left; 
+    padding-top: 25px;
+    max-width: 300px;
+    margin-left: -1px;
+    color: white;
+}
+
+.sidebar-contact i {
+    color: hsl(16, 100%, 60%);
+}
+
+.sidebar-topics {
+    padding-top: 25px;
+    color: white;
+    margin-left: 15px;
+}
+
+.sidebar-topics ol li {
+    padding-top: 10px;
+    font-size: 1.2rem;
+}

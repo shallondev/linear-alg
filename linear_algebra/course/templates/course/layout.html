@@ -4,11 +4,53 @@
 <html lang="en">
     <head>
         <title>{% block title %}Linear Algebra{% endblock %}</title>
+
+        <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="{% static 'course/css/styles.css' %}">
+    
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/e308f5f709.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        {% block body %}
-        {% endblock %}
+
+        <!-- Side Bar -->
+        <aside>
+
+            <!-- Heading Title -->
+            <div class="sidebar-title">
+                <h2>Linear Algebra <span>Calculators!</span></h2>
+            </div>
+
+            <!-- Contact -->
+            <div class="sidebar-contact">
+                <ul>
+                    <li>Shallon F. Pawlick-Potts</li>
+                    <li>shallon.frances.pawlickpotts@gmail.com</li>
+                    <li>
+                        <a href="https://github.com/shallondev" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/shallondev" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Topics -->
+            <div class="sidebar-topics">
+                <ol>
+                    <li><a href="#">Matrix Addition</a></li>
+                    <li><a href="#">Matrix Multiplication</a></li>
+                    <li><a href="#">Matrix Inversion</a></li>
+                    <li><a href="#">Determinant Calculation</a></li>
+                    <li><a href="#">Diagonalization</a></li>
+                </ol>
+            </div>
+        </aside> 
+
+        <main>
+            {% block body %}
+            {% endblock %}
+        </main>
     </body>
 </html>
